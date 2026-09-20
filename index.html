@@ -3,75 +3,623 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Personal portfolio of an Electronics and Telecommunication Engineering student.">
 
     <title>Your Name | Portfolio</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Electronics & Telecommunication Engineer</p>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            &lt;/&gt;
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="nav-right">
+
+            <a href="https://github.com/YOURUSERNAME"
+               target="_blank"
+               aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/YOURUSERNAME/"
+               target="_blank"
+               aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+            <button id="themeToggle"
+                    aria-label="Toggle theme">
+                ☾
+            </button>
+
+        </div>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
+    <!-- ================= HOME ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <!-- Background decoration -->
+
+            <div class="glow glow-one"></div>
+            <div class="glow glow-two"></div>
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+                <p class="hello">
+                    HELLO, I'M
+                </p>
+
+                <h1>
+                    Electronics &
+                    <br>
+                    Telecommunication
+                    <br>
+
+                    <span>
+                        Engineering Student
+                    </span>
+                </h1>
+
+                <p class="hero-description">
+
+                    Building technology that connects
+                    ideas, systems and people.
+
+                </p>
+
+
+                <!-- TECHNOLOGY TAGS -->
+
+                <div class="tech-tags">
+
+                    <div class="tag">
+                        <span>&lt;/&gt;</span>
+                        Software
+                    </div>
+
+                    <div class="tag">
+                        <span>▣</span>
+                        Embedded
+                    </div>
+
+                    <div class="tag">
+                        <span>⌁</span>
+                        Electronics
+                    </div>
+
+                    <div class="tag">
+                        <span>☁</span>
+                        Data & Cloud
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="hero-buttons">
+
+                    <a href="#projects"
+                       class="primary-button">
+
+                        View My Projects
+                        <span>→</span>
+
+                    </a>
+
+                    <a href="resume/resume.pdf"
+                       class="secondary-button"
+                       target="_blank">
+
+                        Download Resume
+                        <span>↓</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-visual">
+
+                <div class="visual-orbit"></div>
+
+                <div class="workspace-card">
+
+                    <div class="screen">
+
+                        <div class="code-line long"></div>
+                        <div class="code-line medium"></div>
+                        <div class="code-line short"></div>
+                        <div class="code-line long"></div>
+                        <div class="code-line medium"></div>
+                        <div class="code-line short"></div>
+                        <div class="code-line long"></div>
+
+                    </div>
+
+                    <div class="laptop-base"></div>
+
+                    <div class="plant">
+                        🌿
+                    </div>
+
+                    <div class="books">
+
+                        <div>C++</div>
+                        <div>Python</div>
+                        <div>Embedded</div>
+                        <div>5G</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HIGHLIGHTS ================= -->
+
+        <section class="highlights">
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>
+                    Problem Solver
+                </h3>
+
+                <p>
+                    Turning ideas into
+                    working solutions
+                </p>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    ▣
+                </div>
+
+                <h3>
+                    Lifelong Learner
+                </h3>
+
+                <p>
+                    Always curious,
+                    always growing
+                </p>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    ♧
+                </div>
+
+                <h3>
+                    Socially Responsible
+                </h3>
+
+                <p>
+                    Technology for
+                    a better tomorrow
+                </p>
+
+            </div>
+
+
+            <div class="highlight">
+
+                <div class="highlight-icon">
+                    ☆
+                </div>
+
+                <h3>
+                    Team Player
+                </h3>
+
+                <p>
+                    Better together
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="content-section">
+
+            <p class="section-label">
+                ABOUT ME
+            </p>
+
+            <h2>
+                Technology with purpose.
+            </h2>
+
+            <p class="section-text">
+
+                I am an Electronics and Telecommunication
+                Engineering student passionate about building
+                practical technology solutions.
+
+                My interests span software development,
+                embedded systems, electronics, communication
+                systems, data and cloud technologies.
+
+            </p>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="content-section">
+
+            <p class="section-label">
+                SKILLS
+            </p>
+
+            <h2>
+                My technical toolkit.
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>C++ · Python · C · SQL · Embedded C</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Hardware</h3>
+                    <p>ESP32 · 8051 · Digital Electronics</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>GitHub · Arduino IDE · Keil · MATLAB</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Areas</h3>
+                    <p>Embedded · Communication · Data · Cloud</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="content-section">
+
+            <p class="section-label">
+                PROJECTS
+            </p>
+
+            <h2>
+                Things I've built.
+            </h2>
+
+
+            <div class="projects-grid">
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Tongue-Based Assistive Interface
+                    </h3>
+
+                    <p>
+
+                        An assistive human-machine interface
+                        using capacitive sensing and ESP32
+                        technology to translate tongue gestures
+                        into computer commands.
+
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>ESP32</span>
+                        <span>Embedded C</span>
+                        <span>HMI</span>
+
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>
+                        5.8 GHz Circular Loop Antenna
+                    </h3>
+
+                    <p>
+
+                        Design and simulation of a planar
+                        segmented circular loop antenna
+                        for wireless communication applications.
+
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>CST</span>
+                        <span>RF</span>
+                        <span>5.8 GHz</span>
+
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Data / Software Project
+                    </h3>
+
+                    <p>
+
+                        Add one of your Python, SQL,
+                        cloud or software development
+                        projects here.
+
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Data</span>
+
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section id="education" class="content-section">
+
+            <p class="section-label">
+                EDUCATION
+            </p>
+
+            <h2>
+                Academic journey.
+            </h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span>
+                        B.Tech
+                    </span>
+
+                    <h3>
+                        Electronics & Telecommunication Engineering
+                    </h3>
+
+                    <p>
+                        YCCE · CGPA: 8.53
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        Class XII
+                    </span>
+
+                    <h3>
+                        CBSE
+                    </h3>
+
+                    <p>
+                        75.6%
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        Class X
+                    </span>
+
+                    <h3>
+                        ICSE
+                    </h3>
+
+                    <p>
+                        90.8%
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE ================= -->
+
+        <section id="experience" class="content-section">
+
+            <p class="section-label">
+                EXPERIENCE
+            </p>
+
+            <h2>
+                What I've been involved in.
+            </h2>
+
+            <div class="experience-card">
+
+                <h3>
+                    Technical & Student Leadership
+                </h3>
+
+                <p>
+
+                    Involved in technical projects,
+                    student organizations, workshops,
+                    technical events and community-oriented
+                    initiatives.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="contact-section">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h2>
+                Let's build something meaningful.
+            </h2>
+
+            <p>
+                Interested in collaborating, discussing
+                technology or exploring opportunities?
+            </p>
+
+            <a href="mailto:YOUR_EMAIL@gmail.com"
+               class="primary-button">
+
+                Get In Touch →
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
         <p>
-            I am an Electronics and Telecommunication Engineering student
-            interested in technology, software development and embedded systems.
+            © 2026 Your Name
         </p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <ul>
-            <li>C++</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Embedded C</li>
-            <li>ESP32</li>
-            <li>8051</li>
-            <li>GitHub</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <h3>Project 1</h3>
-        <p>Project description goes here.</p>
-
-        <h3>Project 2</h3>
-        <p>Project description goes here.</p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
 
         <p>
-            B.Tech in Electronics & Telecommunication Engineering
+            Built with HTML · CSS · JavaScript · GitHub Pages
         </p>
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    </footer>
 
-        <p>
-            GitHub: github.com/yourusername
-        </p>
-    </section>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
